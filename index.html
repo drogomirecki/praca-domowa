@@ -2,16 +2,346 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css" />
-    <title>Praca domowa</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Figma homework sprint one</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <h1>Zmiany</h1>
-    <h2>Zmiany2</h2>
-</body>
+  <div class="container">
 
+    <!-- DIV Header -->
+    <div id="header">
+      <div class="logo"></div>
+      <div class="search"><input placeholder="Job type or location..." type="search" />
+        <button class="search-magnifier"><img src="images/icon-search.svg" /></button>
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a href="offers.html">Offers</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="terms.html">Terms</a></li>
+          <li><a href="privacy-policies.html">Privacy Policies</a></li>
+        </ul>
+      </div>
+      <div class="post-a-job">
+        <button class="post-a-job-button">Post a job</button>
+      </div>
+      <select id="sign-in" class="sign-in" name="sign-in">
+        <option selected>Sign in</option>
+        <option>Register</option>
+      </select>
+    </div>
+    <div class="divider"></div>
+    <div id="select-a-filter">
+      <div class="select-a-filter-position">
+        <div class="position-checkbox">
+          <div class="filter-color-background frontend"></div>
+          <div class="filter-position checkbox-frontend">
+            <input type="checkbox" id="frontend" class="checkbox" />
+            <label for="frontend" class="cbox-label">
+              <img src="images/noun-fullstack-4517026.png" alt="frontend position" />
+              Frontend
+            </label>
+          </div>
+        </div>
+        <div class="position-checkbox">
+          <div class="filter-color-background architekt"></div>
+          <div class="filter-position checkbox-architekt">
+            <input type="checkbox" id="architekt" class="checkbox" />
+            <label for="architekt" class="cbox-label">
+              <img src="images/noun-fullstack-4517026.png" alt="architekt position" />
+              Architekt
+            </label>
+          </div>
+        </div>
+        <div class="position-checkbox">
+          <div class="filter-color-background devops"></div>
+          <div class="filter-position checkbox-devops">
+            <input type="checkbox" id="devops" class="checkbox" />
+            <label for="devops" class="cbox-label">
+              <img src="images/noun-fullstack-4517026.png" alt="devops position" />
+              Devops
+            </label>
+          </div>
+        </div>
+        <div class="position-checkbox">
+          <div class="filter-color-background fullstack"></div>
+          <div class="filter-position checkbox-fullstack">
+            <input type="checkbox" id="fullstack" class="checkbox" />
+            <label for="fullstack" class="cbox-label">
+              <img src="images/noun-fullstack-4517026.png" alt="fullstack position" />
+              Fullstack
+            </label>
+          </div>
+        </div>
+        <div class="position-checkbox">
+          <div class="filter-color-background analityk"></div>
+          <div class="filter-position checkbox-analityk">
+            <input type="checkbox" id="analityk" class="checkbox" />
+            <label for="analityk" class="cbox-label">
+              <img src="images/noun-fullstack-4517026.png" alt="analityk position" />
+              Analityk
+            </label>
+          </div>
+        </div>
+        <div class="position-checkbox">
+          <div class="filter-color-background tester"></div>
+          <div class="filter-position checkbox-tester">
+            <input type="checkbox" id="tester" class="checkbox" />
+            <label for="tester" class="cbox-label">
+              <img src="images/noun-fullstack-4517026.png" alt="tester position" />
+              Tester
+            </label>
+          </div>
+        </div>
+        <div class="select-button-one">
+          <select class="select-more-options">
+            <option selected value>+ 6</option>
+            <option value="select-one">1</option>
+            <option value="select-two">2</option>
+          </select>
+        </div>
+      </div>
+      <div class="select-button-two">
+        <select class="select-experience">
+          <option selected value>Seniority</option>
+          <option value="experience-junior">Junior</option>
+          <option value="experience-senior">Senior</option>
+        </select>
+      </div>
+    </div>
+    <div class="select-additional-skills">
+      <div class="additional-skills">
+        <div class="skills-type">
+          <input type="checkbox" class="checkbox" id="git" />
+          <label class="skills-type-label" for="git">
+            <div class="additional-skills-image"><img src="images/icon-check-item.png" alt="git" /></div>
+            Git
+          </label>
+        </div>
+        <div class="skills-type"><input type="checkbox" class="checkbox" id="vue" />
+          <label class="skills-type-label" for="vue">
+            <div class="additional-skills-image"><img src="images/redux-original.png" alt="vue" /></div>
+            Vue
+          </label>
+        </div>
+        <div class="skills-type"><input type="checkbox" class="checkbox" id="anglular" />
+          <label class="skills-type-label" for="anglular">
+            <div class="additional-skills-image"><img src="images/icon-js.png" alt="anglular" /></div>
+            Anglular
+          </label>
+        </div>
+        <div class="skills-type"><input type="checkbox" class="checkbox" id="js" />
+          <label class="skills-type-label" for="js">
+            <div class="additional-skills-image"><img src="images/icon-check-item.png" alt="JavaScript" /></div>
+            JS
+          </label>
+        </div>
+        <div class="skills-type"><input type="checkbox" class="checkbox" id="css" />
+          <label class="skills-type-label" for="css">
+            <div class="additional-skills-image"><img src="images/redux-original.png" alt="css" /></div>
+            CSS
+          </label>
+        </div>
+        <div class="skills-type"><input type="checkbox" class="checkbox" id="html" />
+          <label class="skills-type-label" for="html">
+            <div class="additional-skills-image"><img src="images/icon-js.png" alt="html" /></div>
+            HTML
+          </label>
+        </div>
+        <div class="skills-type"><input type="checkbox" class="checkbox" id="agile" />
+          <label class="skills-type-label" for="agile">
+            <div class="additional-skills-image"><img src="images/icon-check-item.png" alt="agile" /></div>
+            Agile
+          </label>
+        </div>
+        <div class="skills-type"><input type="checkbox" class="checkbox" id="git-nr-two" />
+          <label class="skills-type-label" for="git-nr-two">
+            <div class="additional-skills-image"><img src="images/redux-original.png" alt="git-nr-two" /></div>
+            Git
+          </label>
+        </div>
+      
+        <!-- tutaj koniec na dzis -->
+        
+        <div class="select-button-three"> 
+          <select class="skills-more-select">
+            <option selected value>+ 32</option>
+            <option value="value1">1</option>
+            <option value="value2">2 </option>
+          </select>
+        </div>
+      </div>
+      <div class="extra-select-buttons">
+        <div class="remote-work-button"><input type="checkbox" class="checkbox" id="remote-button" />
+          <label for="remote-button" class="extra-button-label">100% Remote</label>
+        </div>
+        <div class="price-range-button"><input type="checkbox" class="checkbox" id="price-range" />
+          <label for="price-range" class="extra-button-label">Price-range</label>
+        </div>
+      </div>
+    </div>
+    <div id="select-a-filter-sort-by">
+      <div class="select-filters-img">
+  <a href=""><img src="images/icon-filter.png" alt="icon filter" /></a>
+        <span>Filters</span>
+      </div>
+      <div class="select-sort-by">
+        <span>Sort by:</span>
+        <select name="sort">
+          <option value="sortby">latest</option>
+          <option value="sortby">newest</option>
+        </select>
+      </div>
+      <div class="view-list">
+        <a href=""><img src="images/list.png" alt="list view" /></a>
+        <a href=""><img src="images/box.png" alt="box view" /></a>
+      </div>
+    </div>
+    <div id="jobs-list">
+      <div class="job-box">
+        <div class="job-box-color-background box-one"></div>
+        <div class="big-box-with-offer">
+          <div><img src="images/mask-group.png" alt="netguru logo" class="big-box-company-logo"/></div>
+          <div class="job-offer-result">
+            <div class="job-box-header">
+          <h4 class="job-title">Remote Ruby on Rails Developer<h4>         
+              <div class="remote-img"><img src="images/remote.png" alt="remote img"/></div>
+            </div>
+            <div class="job-details">
+              <span class="company">Netguru S.A.</span>
+              <span>|</span>
+              <span class="location">
+                <img src="images/icon-local.png" />
+                Poznan, Poland
+              </span>
+              <span>|</span>
+              <span class="experience">Mid</span>
+              <span>|</span>
+              <span class="date"><img src="images/new.png" alt="new offer"/></span>
+            </div>
+          </div>
+          <div class="salary">
+            <div><span class="wages">9 350 - 14 000 PLN net &#128176</span>
+              <img class="img-heart" src="images/heart-stroke.png" alt="icon heart" />
+            </div>
+            <div class="bottom-line"><span class="bottom-line-bold-txt">Ruby</span>
+              <span>JavaScript</span><span>SQL</span></div>
+          </div>
+          <div class="quickly-apply"><a href=""><button class="quickly-apply-button">Quickly apply</button></a></div>
+        </div>
+      </div>
+      <div class="job-box">
+        <div class="job-box-color-background box-two"></div>
+        <div class="big-box-with-offer">
+          <div><img src="images/mask-group.png" alt="netguru logo" class="big-box-company-logo" /></div>
+          <div class="job-offer-result">
+            <div class="job-box-header">
+              <div class="job-title">
+                <h4>Senior Full-Stack Developer (Java)</h4>
+              </div>
+            </div>
+            <div class="job-details">
+              <span class="company">Netguru S.A.</span>
+              <span>|</span>
+              <span class="location">
+                <img src="images/icon-local.png" />
+                Warsaw, Poland
+              </span>
+              <span>|</span>
+              <span class="experience">Mid</span>
+              <span>|</span>
+              <span class="date"><img src="images/new.png" /></span>
+            </div>
+          </div>
+          <div class="salary">
+            <div><span class="wages">9 350 - 14 000 PLN net &#128176</span>
+              <img class="img-heart" src="images/heart-stroke.png" alt="icon heart" />
+            </div>
+            <div class="bottom-line"><span class="bottom-line-bold-txt">Ruby</span>
+              <span>JavaScript</span><span>SQL</span></div>
+          </div>
+          <div class="quickly-apply"><a href="">
+            <button class="quickly-apply-button">Quickly apply</button></a></div>
+        </div>
+      </div>
+      <div class="job-box">
+        <div class="job-box-color-background box-three"></div>
+        <div class="big-box-with-offer">
+          <div><img src="images/mask-group.png" alt="netguru logo"  class="big-box-company-logo" /></div>
+          <div class="job-offer-result">
+            <div class="job-box-header">
+              <div class="job-title">
+                <h4>Remote Ruby on Rails Developer</h4>
+              </div>
+              <div class="remote-img"><img src="images/remote.png" alt="remote img"/></div>
+            </div>
+            <div class="job-details">
+              <span class="company">Netguru S.A.</span>
+              <span>|</span>
+              <span class="location">
+                <img src="images/icon-local.png" />
+                Poznan, Poland
+              </span>
+              <span>|</span>
+              <span class="experience">Mid</span>
+              <span>|</span>
+              <span class="date">2d ago</span>
+            </div>
+          </div>
+         <div class="salary">
+            <div><span class="wages">9 350 - 14 000 PLN net &#128176</span>
+              <img class="img-heart" src="images/heart-stroke.png" alt="icon heart" />
+            </div>
+            <div class="bottom-line"><span class="bottom-line-bold-txt">Ruby</span>
+              <span>JavaScript</span><span>SQL</span></div>
+          </div>
+          <div class="quickly-apply"><a href="">
+            <button class="quickly-apply-button">Quickly apply</button></a></div>
+        </div>
+      </div>
+      <div class="job-box">
+        <div class="job-box-color-background box-four"></div>
+        <div class="big-box-with-offer">
+          <div><img src="images/mask-group.png" alt="netguru logo"  class="big-box-company-logo" /></div>
+          <div class="job-offer-result">
+            <div class="job-box-header">
+              <div class="job-title">
+                <h4>Remote Ruby on Rails Developer</h4>
+              </div>
+              <div class="remote-img"><img src="images/remote.png" alt="remote img"/></div>
+            </div>
+            <div class="job-details">
+              <span class="company">Netguru S.A.</span>
+              <span>|</span>
+              <span class="location">
+                <img src="images/icon-local.png" />
+                Chełm, Poland
+              </span>
+              <span>|</span>
+              <span class="experience">Mid</span>
+              <span>|</span>
+              <span class="date">29.10.2022</span>
+            </div>
+          </div>
+          <div class="salary">
+            <div><span class="wages">9 350 - 14 000 PLN net &#128176</span>
+              <img class="img-heart" src="images/heart-stroke.png" alt="icon heart" />
+            </div>
+            <div class="bottom-line"><span class="bottom-line-bold-txt">Ruby</span>
+              <span>JavaScript</span><span>SQL</span></div>
+          </div>
+          <div class="quickly-apply"><a href="">
+            <button class="quickly-apply-button">Quickly apply</button></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
 </html>
